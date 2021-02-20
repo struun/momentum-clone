@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; 
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.clock-box {
+    position: relative;
+    top: 0px;
+}
+
+#clock {
+    font-size: 100px;
+    color: #ecf0f1;
+    letter-spacing: 1px;
+}
+
+.name-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+
+.name-form {
+    position: absolute;
+    top: 0px;
+}
+
+.name {
+    position: absolute;
+    top: -80px;
+    font-size: 50px;
+}
+
+.name-form,
+.name {
+    display: none;
+}
+
+
+input {
+    border: none;
+    background: transparent;
+    border-bottom: 3px solid #fff;
+}
+
+input::placeholder {
+    text-align: center;
+    color: #fff;
+}
+
+.todo-box {
+    position: relative;
+    width: 175px;
+    border: none;
+}
+
+.todo-list {
+    height: 200px;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.todo-list {
+    list-style: none;
+}
+
+.weather {
+    position: absolute;
+    top: 0%;
+    right: 10px;
+}
+
+.showing {
+    display: block;
+}
